@@ -43,7 +43,12 @@
     "devServerPort": 9060,
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Customer", "Transaction", "Invoice", "Wallet"],
+    "lastLiquibaseTimestamp": 1626120882000,
+    "herokuAppName": "pay-it-bit-application",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   },
   "git-provider": "GitHub",
   "git-company": "aviadyosef",

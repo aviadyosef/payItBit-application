@@ -31,21 +31,21 @@ entity Invoice {
     action String
 }
 
+enum WallteType {
+    BTC, USDT
+}
+
 entity Wallet {
 	readableName String,
 	wallteType WallteType,
-	id String
-}
-
-enum WallteType {
-    BTC, USDT
+	idWallet String
 }
 
 // defining multiple OneToMany relationships with comments
 relationship OneToMany {
 	Customer to Wallet{wallet},
 	Customer to Invoice{invoice},
-	Customer to Transaction{transaction},    
+	Customer to Transaction{transaction},
 }
 
 // Set pagination options
