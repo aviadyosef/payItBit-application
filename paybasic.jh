@@ -1,0 +1,59 @@
+
+/**
+ * The Customer entity.
+ */
+entity Customer {
+    seqNo Long,
+    createdOn Long,
+	firstName String,
+	lastName String,
+	email String,
+	phoneNumber String,
+    companyName String,
+    telegramName String
+}
+
+entity Transaction {
+	title String,
+    createdOn Long,
+    senderAddress String,
+    receiverAddress String,
+    amount String,
+	description String
+}
+
+entity Invoice {
+	seqNo String,
+    createdOn Long,
+    invoiceNumber String,
+    companyName String,
+    createdBy String,
+    action String
+}
+
+entity Wallet {
+	readableName String,
+	wallteType WallteType,
+	id String
+}
+
+enum WallteType {
+    BTC, USDT
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Customer to Wallet{wallet},
+	Customer to Invoice{invoice},
+	Customer to Transaction{transaction},    
+}
+
+// Set pagination options
+paginate Customer with infinite-scroll
+paginate Invoice with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Customer
