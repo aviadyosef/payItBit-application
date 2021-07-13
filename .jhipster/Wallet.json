@@ -1,0 +1,32 @@
+{
+  "name": "Wallet",
+  "fields": [
+    {
+      "fieldName": "readableName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "walletType",
+      "fieldType": "WalletType",
+      "fieldValues": "BTC,USDT"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "userInfo",
+      "otherEntityRelationshipName": "wallet",
+      "relationshipName": "wallet"
+    }
+  ],
+  "entityTableName": "wallet",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210713080821"
+}

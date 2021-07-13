@@ -1,0 +1,32 @@
+{
+  "name": "SupplierInfo",
+  "fields": [
+    {
+      "fieldName": "companyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "number",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "website",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "supplier_info",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210713080823"
+}

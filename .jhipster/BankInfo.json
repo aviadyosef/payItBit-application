@@ -1,0 +1,44 @@
+{
+  "name": "BankInfo",
+  "fields": [
+    {
+      "fieldName": "accountHolderName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ibanNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "swiftCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bankAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "referenceNo",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "bank_info",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210713080824"
+}

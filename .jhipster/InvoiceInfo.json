@@ -1,0 +1,42 @@
+{
+  "name": "InvoiceInfo",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "invoiceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "invoicePicture",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "agreement",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "serviceDescription",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "invoice_info",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210713080822"
+}

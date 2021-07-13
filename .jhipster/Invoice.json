@@ -1,0 +1,60 @@
+{
+  "name": "Invoice",
+  "fields": [
+    {
+      "fieldName": "seqNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "action",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "invoiceInfo",
+      "otherEntityRelationshipName": "invoice",
+      "relationshipName": "invoiceInfo",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "supplierInfo",
+      "otherEntityRelationshipName": "invoice",
+      "relationshipName": "supplierInfo",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankInfo",
+      "otherEntityRelationshipName": "invoice",
+      "relationshipName": "bankInfo",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "userInfo",
+      "otherEntityRelationshipName": "invoice",
+      "relationshipName": "invoice"
+    }
+  ],
+  "entityTableName": "invoice",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210713080820"
+}
