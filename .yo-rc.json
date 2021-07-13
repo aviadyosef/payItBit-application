@@ -43,7 +43,9 @@
     "devServerPort": 9060,
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["UserInfo", "Transaction", "Invoice", "Wallet", "InvoiceInfo", "SupplierInfo", "BankInfo"],
+    "lastLiquibaseTimestamp": 1626163704000
   },
   "git-provider": "GitHub",
   "git-company": "aviadyosef",

@@ -1,8 +1,8 @@
 
 /**
- * The Customer entity.
+ * The UserInfo entity.
  */
-entity Customer {
+entity UserInfo {
     seqNo Long,
     createdOn Long,
 	firstName String,
@@ -24,36 +24,73 @@ entity Transaction {
 
 entity Invoice {
 	seqNo String,
-    createdOn Long,
-    invoiceNumber String,
-    companyName String,
+    createdOn ZonedDateTime,
     createdBy String,
     action String
 }
 
-entity Wallet {
-	readableName String,
-	wallteType WallteType,
-	id String
+enum WalletType {
+    BTC, USDT
 }
 
-enum WallteType {
-    BTC, USDT
+entity Wallet {
+	readableName String,
+	walletType WalletType
+}
+
+entity InvoiceInfo {
+	amount String,
+    invoiceNumber String,
+    currency String,
+    invoicePicture ImageBlob,
+    agreement ImageBlob,
+    serviceDescription String
+}
+
+entity SupplierInfo {
+	companyName String,
+    number String,
+    address String,
+    website String
+}
+
+entity BankInfo {
+	accountHolderName String,
+    accountNumber String,
+    ibanNumber String,
+    swiftCode String,
+    bankAddress String,
+    country String,
+    referenceNo String
+}
+
+relationship OneToOne {
+	Invoice{invoiceInfo} to InvoiceInfo
+}
+
+relationship OneToOne {
+	Invoice{supplierInfo} to SupplierInfo
+}
+
+relationship OneToOne {
+	Invoice{bankInfo} to BankInfo
 }
 
 // defining multiple OneToMany relationships with comments
 relationship OneToMany {
-	Customer to Wallet{wallet},
-	Customer to Invoice{invoice},
-	Customer to Transaction{transaction},    
+	UserInfo to Wallet{wallet},
+	UserInfo to Invoice{invoice},
+	UserInfo to Transaction{transaction},
 }
 
+
 // Set pagination options
-paginate Customer with infinite-scroll
+paginate UserInfo with infinite-scroll
 paginate Invoice with pagination
 
 // Use Data Transfer Objects (DTO)
 // dto * with mapstruct
 
 // Set service options to all except few
-service all with serviceImpl except Customer
+service all with serviceImpl except UserInfo
+
