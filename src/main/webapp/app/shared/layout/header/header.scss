@@ -104,6 +104,46 @@ Navbar styles
   }
 }
 
+.img-fluid {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.menu-bg {
+  background: linear-gradient(256.18deg, #e8eb7d 2.97%, #a1d472 59.87%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 40px 40px;
+}
+
+p.welcome-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #5c5c5c;
+}
+
+p.getstart {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 47px;
+  line-height: 103.37%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #73b642;
+}
+
 .loading-bar {
   height: 3px;
   background-color: #009cd8;
