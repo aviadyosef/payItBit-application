@@ -1,11 +1,5 @@
-//.footer {
-//  position: relative;
-//  width: 100%;
-//  left: 0;
-//  bottom: 0;
-//}
-
-.footer {
+.footer p {
+  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 141.87%;
@@ -15,4 +9,14 @@
 
 .footer .footer-form {
   margin-top: -150px;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'), url('../../../../content/fonts/Raleway-100.woff2') format('truetype');
+  font-weight: bold;
+}
+
+.font-face-raleway {
+  font-family: 'Raleway';
 }

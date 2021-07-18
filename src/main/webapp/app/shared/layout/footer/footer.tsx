@@ -1,4 +1,5 @@
 import './footer.scss';
+import '../../../../content/fonts/Raleway-100.woff2';
 
 import React from 'react';
 
@@ -8,10 +9,10 @@ const Footer = props => (
   <div className="footer p-4">
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-12 text-center">
+        <div className="col-md-12 text-center font-face-raleway">
           <p className="text-large">
             {' '}
-            © <script>document.write(new Date().getFullYear())</script>2021 PayItBit.
+            © <script>document.write(new Date().getFullYear())</script>2021 Payitbit.
           </p>
         </div>
       </div>
