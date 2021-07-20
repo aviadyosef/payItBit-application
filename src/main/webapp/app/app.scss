@@ -6,9 +6,15 @@ body {
   margin: 0;
 }
 
+//a {
+//  color: #533f03;
+//  font-weight: bold;
+//}
+
 a {
-  color: #533f03;
-  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
 }
 
 * {
@@ -324,6 +330,41 @@ section.main-content {
   min-height: 100vh;
 }
 
+.text-large {
+  font-size: 18px;
+  line-height: 26px !important;
+}
+
+.wallet-box {
+  background-image: url(../content/images/wallet-box.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.wallet-box-dashboard {
+  background-image: url(../content/images/wallet-box.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 2.5em;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'), url('../content/fonts/Raleway-300.woff2') format('truetype');
+  font-weight: bold;
+}
+
+.font-face-raleway {
+  font-family: 'Raleway';
+}
+
+.font-face-raleway-green {
+  font-family: 'Raleway';
+  color: #73b642;
+}
+
 .h1,
 .h2,
 .h3,
@@ -339,7 +380,42 @@ h6 {
   font-family: 'Raleway';
 }
 
-.text-large {
-  font-size: 18px;
-  line-height: 26px !important;
+@font-face {
+  font-family: 'Raleway-round';
+  src: local('Raleway-round'), url('../content/fonts/Varela-Round-Regular.woff2') format('truetype');
+  font-weight: bold;
+}
+
+.font-face-round {
+  font-family: 'Raleway-round';
+}
+
+.font-face-raleway-round-green {
+  font-family: 'Raleway-round';
+  color: #73b642;
+}
+
+.font-face-raleway-variableFont-white {
+  font-family: 'RalewayVariableFont';
+  color: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+  font-family: 'Raleway100';
+  src: local('Raleway100'), url('../content/fonts/Raleway-100.woff2') format('truetype');
+  font-weight: bold;
+}
+
+.font-face-raleway-100 {
+  font-family: 'Raleway100';
+}
+
+@font-face {
+  font-family: 'RalewayVariableFont';
+  src: local('RalewayVariableFont'), url('../content/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+.font-face-raleway-variableFont {
+  font-family: 'RalewayVariableFont';
+  color: #ffffff;
 }

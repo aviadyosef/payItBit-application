@@ -1,22 +1,26 @@
-.footer p {
+.footer {
+  background-image: url('../../../../content/images/page-background.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.footer p-4 {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 141.87%;
   text-align: center;
-  color: #313133;
 }
 
-.footer .footer-form {
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+.footer .footer-form .background {
   margin-top: -150px;
 }
 
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway'), url('../../../../content/fonts/Raleway-100.woff2') format('truetype');
-  font-weight: bold;
-}
-
-.font-face-raleway {
-  font-family: 'Raleway';
+.background {
+  background: #d0ecb4;
 }

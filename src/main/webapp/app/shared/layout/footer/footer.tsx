@@ -6,7 +6,7 @@ import React from 'react';
 import { Col, Row } from 'reactstrap';
 
 const Footer = props => (
-  <div className="footer p-4">
+  <div className="footer p-4 background">
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-12 text-center font-face-raleway">
