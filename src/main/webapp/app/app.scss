@@ -415,7 +415,13 @@ h6 {
   src: local('RalewayVariableFont'), url('../content/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
-.font-face-raleway-variableFont {
+.font-face-raleway-variableFont .justify-content-center {
   font-family: 'RalewayVariableFont';
   color: #ffffff;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
 }

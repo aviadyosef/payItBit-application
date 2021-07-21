@@ -40,7 +40,7 @@ export const PasswordPage = () => {
 
   return (
     <div>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center font-face-raleway-green">
         <Col md="8">
           <h2 id="password-title">Password for {account.login}</h2>
           <ValidatedForm id="password-form" onSubmit={handleValidSubmit}>

@@ -95,7 +95,7 @@ export const UserInfo = (props: RouteComponentProps<{ url: string }>) => {
 
   return (
     <div>
-      <h2 id="user-info-heading" data-cy="UserInfoHeading">
+      <h2 id="user-info-heading font-face-raleway-green" data-cy="UserInfoHeading">
         User Infos
         <div className="d-flex justify-content-end">
           <Button className="mr-2" color="info" onClick={handleSyncList} disabled={loading}>

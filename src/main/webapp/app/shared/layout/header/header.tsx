@@ -10,6 +10,7 @@ import { AdminMenu, EntitiesMenu, AccountMenu } from '../menus';
 import { InvoicesMenu } from 'app/shared/layout/menus/Invoices';
 import { TransactionsMenu } from 'app/shared/layout/menus/Transactions';
 import { AddInvoiceBtn } from 'app/shared/layout/menus/addInvoice';
+import { UserProfile } from 'app/shared/layout/menus/userProfile';
 
 export interface IHeaderProps {
   isAuthenticated: boolean;
@@ -43,14 +44,14 @@ const Header = (props: IHeaderProps) => {
         <Collapse isOpen={menuOpen} navbar>
           <Nav id="header-tabs" className="mx-auto main-navigation" navbar>
             <Home />
-            {props.isAuthenticated && <EntitiesMenu />}
-            {props.isAuthenticated && props.isAdmin && (
-              <AdminMenu showOpenAPI={props.isOpenAPIEnabled} showDatabase={!props.isInProduction} />
-            )}
             <InvoicesMenu className="font-header-withe" />
             <TransactionsMenu />
             <AddInvoiceBtn />
             <AccountMenu isAuthenticated={props.isAuthenticated} />
+            {props.isAuthenticated && <EntitiesMenu />}
+            {props.isAuthenticated && props.isAdmin && (
+              <AdminMenu showOpenAPI={props.isOpenAPIEnabled} showDatabase={!props.isInProduction} />
+            )}
             <div />
           </Nav>
         </Collapse>

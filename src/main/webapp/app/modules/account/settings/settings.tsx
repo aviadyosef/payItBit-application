@@ -36,9 +36,11 @@ export const SettingsPage = () => {
 
   return (
     <div>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center page-title mb-2 font-face-raleway-green">
         <Col md="8">
-          <h2 id="settings-title">User settings for {account.login}</h2>
+          <h2 className="page-title mb-2" id="settings-title">
+            My Profile, {account.login}
+          </h2>
           <ValidatedForm id="settings-form" onSubmit={handleValidSubmit} defaultValues={account}>
             <ValidatedField
               name="firstName"

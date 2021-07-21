@@ -6,7 +6,7 @@ import { NavDropdown } from './menu-components';
 const accountMenuItemsAuthenticated = (
   <>
     <MenuItem icon="wrench" to="/account/settings" data-cy="settings">
-      Settings
+      MY PROFILE
     </MenuItem>
     <MenuItem icon="lock" to="/account/password" data-cy="passwordItem">
       Password
@@ -29,7 +29,7 @@ const accountMenuItems = (
 );
 
 export const AccountMenu = ({ isAuthenticated = false }) => (
-  <NavDropdown icon="user" name="Account" id="account-menu" data-cy="accountMenu">
+  <NavDropdown icon="user" name="MY PROFILE" id="account-menu" data-cy="accountMenu">
     {isAuthenticated ? accountMenuItemsAuthenticated : accountMenuItems}
   </NavDropdown>
 );
