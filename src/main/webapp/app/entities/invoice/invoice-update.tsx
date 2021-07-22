@@ -17,6 +17,7 @@ import { IInvoice } from 'app/shared/model/invoice.model';
 import { convertDateTimeFromServer, convertDateTimeToServer, displayDefaultDateTime } from 'app/shared/util/date-utils';
 import { mapIdList } from 'app/shared/util/entity-utils';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
+import { CreateOrEditInvoice } from 'app/entities/invoice/create-or-edit-invoice';
 
 export const InvoiceUpdate = (props: RouteComponentProps<{ id: string }>) => {
   const dispatch = useAppDispatch();
@@ -92,12 +93,18 @@ export const InvoiceUpdate = (props: RouteComponentProps<{ id: string }>) => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="payItBitApplicationApp.invoice.home.createOrEditLabel" data-cy="InvoiceCreateUpdateHeading">
+          <h2
+            id="payItBitApplicationApp.invoice.home.createOrEditLabel"
+            className="font-face-raleway-green"
+            data-cy="InvoiceCreateUpdateHeading"
+          >
             Create or edit a Invoice
           </h2>
         </Col>
       </Row>
-      <Row className="justify-content-center">
+
+      <Row className="justify-content-center font-face-raleway-green">
+        {/*<CreateOrEditInvoice/>*/}
         <Col md="8">
           {loading ? (
             <p>Loading...</p>
