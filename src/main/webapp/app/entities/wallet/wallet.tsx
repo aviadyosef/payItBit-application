@@ -27,7 +27,7 @@ export const Wallet = (props: RouteComponentProps<{ url: string }>) => {
 
   return (
     <div>
-      <h2 id="wallet-heading" data-cy="WalletHeading">
+      <h2 id="wallet-heading" className="font-face-raleway-green" data-cy="WalletHeading">
         Wallets
         <div className="d-flex justify-content-end">
           <Button className="mr-2" color="info" onClick={handleSyncList} disabled={loading}>
