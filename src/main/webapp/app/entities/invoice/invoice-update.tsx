@@ -100,81 +100,21 @@ export const InvoiceUpdate = (props: RouteComponentProps<{ id: string }>) => {
           >
             Create or edit a Invoice
           </h2>
+          <CreateOrEditInvoice />
+        </Col>
+
+        <Col md="8">
+          <div className="form-row mb-4"></div>
         </Col>
       </Row>
 
-      <Row className="justify-content-center font-face-raleway-green">
-        {/*<CreateOrEditInvoice/>*/}
-        <Col md="8">
-          {loading ? (
-            <p>Loading...</p>
-          ) : (
-            <ValidatedForm defaultValues={defaultValues()} onSubmit={saveEntity}>
-              {!isNew ? <ValidatedField name="id" required readOnly id="invoice-id" label="ID" validate={{ required: true }} /> : null}
-              <ValidatedField label="Seq No" id="invoice-seqNo" name="seqNo" data-cy="seqNo" type="text" />
-              <ValidatedField
-                label="Created On"
-                id="invoice-createdOn"
-                name="createdOn"
-                data-cy="createdOn"
-                type="datetime-local"
-                placeholder="YYYY-MM-DD HH:mm"
-              />
-              <ValidatedField label="Created By" id="invoice-createdBy" name="createdBy" data-cy="createdBy" type="text" />
-              <ValidatedField label="Action" id="invoice-action" name="action" data-cy="action" type="text" />
-              <ValidatedField id="invoice-invoiceInfo" name="invoiceInfoId" data-cy="invoiceInfo" label="Invoice Info" type="select">
-                <option value="" key="0" />
-                {invoiceInfos
-                  ? invoiceInfos.map(otherEntity => (
-                      <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
-                      </option>
-                    ))
-                  : null}
-              </ValidatedField>
-              <ValidatedField id="invoice-supplierInfo" name="supplierInfoId" data-cy="supplierInfo" label="Supplier Info" type="select">
-                <option value="" key="0" />
-                {supplierInfos
-                  ? supplierInfos.map(otherEntity => (
-                      <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
-                      </option>
-                    ))
-                  : null}
-              </ValidatedField>
-              <ValidatedField id="invoice-bankInfo" name="bankInfoId" data-cy="bankInfo" label="Bank Info" type="select">
-                <option value="" key="0" />
-                {bankInfos
-                  ? bankInfos.map(otherEntity => (
-                      <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
-                      </option>
-                    ))
-                  : null}
-              </ValidatedField>
-              <ValidatedField id="invoice-invoice" name="invoiceId" data-cy="invoice" label="Invoice" type="select">
-                <option value="" key="0" />
-                {userInfos
-                  ? userInfos.map(otherEntity => (
-                      <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
-                      </option>
-                    ))
-                  : null}
-              </ValidatedField>
-              <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/invoice" replace color="info">
-                <FontAwesomeIcon icon="arrow-left" />
-                &nbsp;
-                <span className="d-none d-md-inline">Back</span>
-              </Button>
-              &nbsp;
-              <Button color="primary" id="save-entity" data-cy="entityCreateSaveButton" type="submit" disabled={updating}>
-                <FontAwesomeIcon icon="save" />
-                &nbsp; Save
-              </Button>
-            </ValidatedForm>
-          )}
-        </Col>
+      <Row className="justify-content-lg-center">
+        <button type="submit" className="btn-payit-white btn-light font-face-raleway-green">
+          ADD NEW INVOICE
+        </button>
+        <button type="submit" className="btn-payit btn-light font-face-raleway">
+          SUBMIT INVOICE
+        </button>
       </Row>
     </div>
   );

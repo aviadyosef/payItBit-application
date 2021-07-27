@@ -410,6 +410,11 @@ h6 {
   font-family: 'Raleway100';
 }
 
+.font-face-raleway-black {
+  font-family: 'Raleway100';
+  color: black;
+}
+
 @font-face {
   font-family: 'RalewayVariableFont';
   src: local('RalewayVariableFont'), url('../content/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
@@ -421,7 +426,103 @@ h6 {
 }
 
 .btn-primary {
+  background: linear-gradient(255.01deg, #e8eb7d -0.28%, #a1d472 60.56%);
+  color: #ffffff;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+.bg-gradient-border {
+  background: linear-gradient(269.96deg, #7fbc47 11.8%, #d7db2d 96.63%);
+  height: 1px;
+}
+
+.custom-file-label::after {
+  background: linear-gradient(255.01deg, #e8eb7d -0.28%, #a1d472 60.56%);
+  color: #ffffff;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+.btn-payit {
+  height: 42px;
+  border: none;
+  background: linear-gradient(255.01deg, #e8eb7d -0.28%, #a1d472 60.56%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 103.37%;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-payit:hover {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+}
+
+.btn-payit:focus {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-payit:active {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-payit-white {
+  height: 42px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 103.37%;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: #73b642;
+}
+
+.btn-payit-white:hover {
+  color: #73b642;
+}
+
+.btn-payit-white:focus {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-payit-white:active {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-payit-home {
+  height: 42px;
+  border: none;
+  background: linear-gradient(231.41deg, #7fbc47 6.19%, #d7db2d 111.33%);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 103.37%;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-payit-home:hover {
+  color: #fff;
+}
+
+.btn-payit-home:focus {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-payit-home:active {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
 }
