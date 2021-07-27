@@ -33,7 +33,7 @@ export const CreateOrEditInvoice = props => (
 
             <div className="col-lg-6 col-md-6">
               <h5 className="card-title card-box">INVOICE INFO</h5>
-              <div className="form-group"></div>
+              <div className="form-group" />
               <hr className="bg-gradient-border" />
               <div className="form-row">
                 <div className="form-group col-md-6">
@@ -151,7 +151,6 @@ export const CreateOrEditInvoice = props => (
                     <option value="Congo, Republic of (Brazzaville)">Congo, Republic of (Brazzaville)</option>
                     <option value="Cook Islands">Cook Islands</option>
                     <option value="Costa Rica">Costa Rica</option>
-                    <option value="Cote D'Ivoire">Cote D'Ivoire</option>
                     <option value="Croatia (Local Name: Hrvatska)">Croatia (Local Name: Hrvatska)</option>
                     <option value="Cuba">Cuba</option>
                     <option value="Cyprus">Cyprus</option>
@@ -211,7 +210,7 @@ export const CreateOrEditInvoice = props => (
                     <option value="Kazakhstan">Kazakhstan</option>
                     <option value="Kenya">Kenya</option>
                     <option value="Kiribati">Kiribati</option>
-                    <option value="Korea, Democratic People's Rep. (North Korea)">Korea, Democratic People's Rep. (North Korea)</option>
+                    <option value="Korea, Democratic Peoples Rep. (North Korea)">Korea, Democratic Peoples Rep. (North Korea)</option>
                     <option value="Korea, Republic of (South Korea)">Korea, Republic of (South Korea)</option>
                     <option value="Kosovo">Kosovo</option>
                     <option value="Kuwait">Kuwait</option>

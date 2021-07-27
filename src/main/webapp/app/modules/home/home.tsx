@@ -71,7 +71,7 @@ export const Home = () => {
         {/*  </li>*/}
         {/*</ul>*/}
 
-        <p className="getstart">LET'S GET</p>
+        <p className="getstart">LETS GET</p>
         <p className="getstart">STARTED!</p>
         <div className="col-lg-3 col-md-3 mb-4">
           <img src="../../../content/images/dashboard-image.svg" alt="PAYITBIT" className="img-fluid" />

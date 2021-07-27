@@ -306,6 +306,18 @@
             <scope>test</scope>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
+
+        <!-- https://mvnrepository.com/artifact/com.vonage/client -->
+        <dependency>
+            <groupId>com.vonage</groupId>
+            <artifactId>client</artifactId>
+            <version>6.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -443,6 +455,11 @@
                                 <version>${jaxb-runtime.version}</version>
                             </path>
                             <!-- jhipster-needle-maven-add-annotation-processor -->
+                            <path>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                                <version>1.18.20</version>
+                            </path>
                         </annotationProcessorPaths>
                     </configuration>
                 </plugin>
