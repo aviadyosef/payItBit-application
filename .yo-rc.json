@@ -45,7 +45,10 @@
     "clientThemeVariant": "",
     "reactive": false,
     "entities": ["UserInfo", "Transaction", "Invoice", "Wallet", "InvoiceInfo", "SupplierInfo", "BankInfo"],
-    "lastLiquibaseTimestamp": 1626163704000
+    "lastLiquibaseTimestamp": 1626163704000,
+    "herokuAppName": "pay-it-bit-application",
+    "herokuDeployType": "jar",
+    "herokuJavaVersion": "11"
   },
   "git-provider": "GitHub",
   "git-company": "aviadyosef",
